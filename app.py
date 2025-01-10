@@ -86,9 +86,50 @@ story = {
         }
     },
     "Merchant_Route_2": {
-        "text": "It's a bright day and you make your way through a foreign town. you pull your wooden cart, filled with sugar, metals and fur, with you. The guild ordered you to sell everything for 20 golden coins which is double the current value. as you pass the people, you reach a crowd of merchants and commoners shouting and yelling. As you mingle in the crowd, people are walking up to you. As you sell your goods, you make your way back to the guild headquarters. Suddenly, a woman runs up to you. You observe her panicking through her facial expressions and her voice. ",
+        "text": "It's a bright day and you make your way through a foreign town. you pull your wooden cart, filled with sugar, metals and fur, with you. The guild ordered you to sell everything for 20 golden coins which is double the current value. as you pass the people, you reach a crowd of merchants and commoners shouting and yelling. As you mingle in the crowd, people are walking up to you. As you sell your goods, you make your way back to the guild headquarters. Suddenly, a woman runs up to you. You observe her panicking through her facial expressions and her voice. She starts speaking in a foreign language, her words unable to penetrate through your unknowingness. What do you do?",
         "choices": {
-            "Continue": "Merchant_Route_3"
+            "Ignore her": "Merchant_Route_3_Ignore",
+            "Help her": "Merchant_Route_3_Help"
+        }
+    },
+    ##################################################
+
+        "Thief_Route_3": {
+        "text": "You start off as a poor peasant. You live close to the woods in the outer city of the kingdom. Your house, as far as you can call it, is a mere shack. Your personal fortune? Nonexistent. You possess a rusty knife and a wicker sack. You own a handful of abilities. Deception, sneak, keen eyes and the ability to pick locks.",
+        "choices": {
+            "Continue": "Thief_Route_4"
+        }
+    },
+    "Assassin_Route_2": {
+        "text": "You work for a rebel organisation who wants to take over the kingdom. The organisation owns a big hidden camp far way from the city. You spend your free time in a small, but manageable room. Your pay does the job. You possess a special poisonous knife and a mediocre sword. Your abilities: Manipulation, stealth, agility and an understanding of human weak spots.",
+        "choices": {
+            "Continue": "Assassin_Route_3"
+        }
+    },
+    "Soldier_Route_2": {
+        "text": "You're a soldier of the kingdom. Part of the common infantry. You live in the barracks. The pay is low, but you can work your way to earn more. Your main possessions are a decent sword and a wooden shield. You wear a leather padded vest and a pair of thick boots. The abilities in your favor are strength, endurance, and defense.",
+        "choices": {
+            "Continue": "Soldier_Route_3"
+        }
+    },
+    "Sage_Route_2": {
+        "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
+        "choices": {
+            "Continue": "Sage_Route_3"
+        }
+    },
+    "Merchant_Route_3_Help": {
+        "text": "You decide to calm her down so that she gets back to her senses. You ask her what's wrong. She points at your pouch. There's a luminescent potion inside. It's your most valuable asset. The potion grands you great health upon drinking it. Looking back at the woman, she starts to explain in gestures. You start to understand that a person dear to her is unwell and in need of treatment. Since she's desperate for the potion, it must be certain that there's nothing else able to help this poor woman. What will you do?",
+        "choices": {
+            "Ignore her": "Merchant_Route_3_Ignore",
+            "Help her": "Merchant_Route_3_Help"
+        }
+    },
+        "Merchant_Route_3_Ignore": {
+        "text": "You push the woman away out of frustration. She lands hurtfully on the ground and starts breaking up in tears. You ignore her standards as you continue your journey to the guild headquarters.",
+        "choices": {
+            "Ignore her": "Merchant_Route_3_Ignore",
+            "Help her": "Merchant_Route_3_Help"
         }
     }
     ##################################################

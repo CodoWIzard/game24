@@ -1,0 +1,27 @@
+{
+  "start": {
+    "text": "You are an individual from Europe. It's 1262 AD. Build your character.",
+    "choices": {
+      "Continue": "Customization"
+    }
+  },
+  "Customization": {
+    "text": "Choose an aspiration.",
+    "choices": {
+      "Sage": "Sage_Route",
+      "Merchant": "Merchant_Route"
+    }
+  },
+  "Sage_Route": {
+    "text": "You chose the Sage route. You now begin your journey of wisdom and exploration.",
+    "choices": {
+      "Continue": "Sage_Route_2"
+    }
+  },
+  "Merchant_Route": {
+    "text": "You chose the Merchant route. Trade and diplomacy await you.",
+    "choices": {
+      "Continue": "Merchant_Route_2"
+    }
+  }
+}

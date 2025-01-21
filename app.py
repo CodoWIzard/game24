@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
+from flask import send_from_directory
 import json
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
 
-# Player state and story
+# Player and story
 player_state = {
     "inventory": [],
     "abilities": {},
@@ -14,17 +15,21 @@ player_state = {
 with open("story.json", "r") as file:
     story = json.load(file)
 
-@app.route("/")
-def index():
-    return app.send_static_file("index.html")
+
+
+@app.route('/')
+def serve_static(filename='index.html'):
+    root_dir = os.path.dirname(os.getcwd())
+    return send_from_directory(os.path.join(root_dir, 'game24', 'templates'), 'index.html')	
 
 @app.route("/scene", methods=["GET"])
 def get_scene():
-    scene_id = player_state["current_scene"]
+    scene_id = request.args.get("scene_id", player_state["current_scene"])
     scene = story.get(scene_id, None)
     if scene:
         return jsonify(scene)
     return jsonify({"error": "Scene not found"}), 404
+
 
 @app.route("/choice", methods=["POST"])
 def make_choice():

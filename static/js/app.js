@@ -4,6 +4,7 @@ const sceneText = document.getElementById("scene-text");
 const choicesContainer = document.getElementById("choices");
 const saveButton = document.getElementById("save");
 const loadButton = document.getElementById("load");
+const startButton = document.getElementById("start");
 
 function loadScene(sceneId) {
   fetch(`/scene?scene_id=${sceneId}`)
@@ -32,16 +33,34 @@ function makeChoice(nextScene) {
     .then(() => loadScene(nextScene));
 }
 
+// Handle Save Game button
 saveButton.addEventListener("click", () => {
   fetch("/save", { method: "POST" })
     .then((response) => response.json())
     .then((data) => alert(data.message));
 });
 
+// Handle Load Game button
 loadButton.addEventListener("click", () => {
   fetch("/load")
     .then((response) => response.json())
-    .then(() => loadScene("start"));
+    .then((data) => {
+      if (data.error) {
+        alert(data.error);
+      } else {
+        loadScene(data.player_state.current_scene);
+      }
+    });
 });
 
-document.addEventListener("DOMContentLoaded", () => loadScene("start"));
+// Initialize game with Start button
+document.addEventListener("DOMContentLoaded", () => {
+  gameContainer.style.display = "none"; // Hide game content on load
+});
+
+// Start the game when the Start button is clicked
+startButton.addEventListener("click", () => {
+  loadScene("start"); // Load the initial scene
+  startButton.style.display = "none"; // Hide the Start button
+  gameContainer.style.display = "block"; // Show the game content
+});

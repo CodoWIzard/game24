@@ -33,14 +33,12 @@ function makeChoice(nextScene) {
     .then(() => loadScene(nextScene));
 }
 
-// Handle Save Game button
 saveButton.addEventListener("click", () => {
   fetch("/save", { method: "POST" })
     .then((response) => response.json())
     .then((data) => alert(data.message));
 });
 
-// Handle Load Game button
 loadButton.addEventListener("click", () => {
   fetch("/load")
     .then((response) => response.json())
@@ -53,14 +51,14 @@ loadButton.addEventListener("click", () => {
     });
 });
 
-// Initialize game with Start button
+// init game
 document.addEventListener("DOMContentLoaded", () => {
-  gameContainer.style.display = "none"; // Hide game content on load
+  gameContainer.style.display = "none"; // hide on load
 });
 
-// Start the game when the Start button is clicked
+// start
 startButton.addEventListener("click", () => {
-  loadScene("start"); // Load the initial scene
-  startButton.style.display = "none"; // Hide the Start button
-  gameContainer.style.display = "block"; // Show the game content
+  loadScene("start");
+  startButton.style.display = "none"; // hide
+  gameContainer.style.display = "block"; // show
 });

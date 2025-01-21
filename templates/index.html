@@ -7,7 +7,6 @@
     <script src="app.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Particle Animation */
       .particles {
         position: absolute;
         top: 0;
@@ -47,13 +46,13 @@
   <body
     class="relative bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center overflow-hidden"
   >
-    <!-- Background Elements -->
+    <!-- elements background -->
     <div class="particles" id="particle-container"></div>
     <div
       class="absolute inset-0 bg-gradient-to-br from-gray-800 via-indigo-900 to-black opacity-70 pointer-events-none"
     ></div>
 
-    <!-- Start Button Section -->
+    <!-- start -->
     <div
       id="start-screen"
       class="flex flex-col items-center justify-center space-y-4 relative z-10"
@@ -70,24 +69,24 @@
       </button>
     </div>
 
-    <!-- Game UI Section -->
+    <!-- UI -->
     <div
       id="game"
       class="hidden w-full max-w-4xl mx-auto space-y-6 relative z-10"
     >
-      <!-- Scene Title -->
+      <!-- scene title style -->
       <div id="scene-header" class="bg-gray-800 p-6 rounded-lg shadow-md">
         <h2 id="scene-title" class="text-2xl font-bold text-white">
           Scene Title
         </h2>
       </div>
 
-      <!-- Scene Text -->
+      <!-- scene text style -->
       <div id="scene-content" class="bg-gray-800 p-6 rounded-lg shadow-md">
         <p id="scene-text" class="text-gray-300 text-lg">Scene description</p>
       </div>
 
-      <!-- Choices -->
+      <!-- choice style -->
       <div id="choices" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
 
       <div class="flex justify-between items-center mt-4">
@@ -106,27 +105,27 @@
       </div>
     </div>
 
-    <!-- Particle Script -->
+    <!-- script particle-->
     <script>
       const particleContainer = document.getElementById("particle-container");
       const createParticle = () => {
         const particle = document.createElement("div");
         particle.classList.add("particle");
-        const size = Math.random() * 4 + 2; // Random size between 2px and 6px
+        const size = Math.random() * 4 + 2; // Random size
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
         particle.style.top = `${Math.random() * 100}%`;
         particle.style.left = `${Math.random() * 100}%`;
-        particle.style.animationDuration = `${Math.random() * 4 + 2}s`; // Random duration between 2s and 6s
+        particle.style.animationDuration = `${Math.random() * 4 + 2}s`; // Random duration
         particleContainer.appendChild(particle);
 
-        // Remove particle after animation
+        // remove particle
         setTimeout(() => {
           particle.remove();
         }, 6000);
       };
 
-      // Create multiple particles at intervals
+      // particle intervals
       setInterval(createParticle, 200);
     </script>
   </body>

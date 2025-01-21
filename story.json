@@ -1,6 +1,6 @@
 {
   "start": {
-    "text": "You are an individual from Europe. It's 1262 AD. Build your character.",
+    "text": "You are an individual from Europe. It's 1262 AC. build your character.",
     "choices": {
       "Continue": "Customization"
     }
@@ -13,15 +13,50 @@
     }
   },
   "Sage_Route": {
-    "text": "You chose the Sage route. You now begin your journey of wisdom and exploration.",
+    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
     "choices": {
       "Continue": "Sage_Route_2"
     }
   },
   "Merchant_Route": {
-    "text": "You chose the Merchant route. Trade and diplomacy await you.",
+    "text": "You start off as a beginner merchant. You work for a local merchant guild. Your job is all about bartering, buying and selling. The guild pays you accordingly. You travel a lot throughout the country and you take your rest at local inns. You own a small collection of goods as you spend your own money on them wisely. You furthermore have a reasonable sword sheath. Your abilities are: Commerce, diplomacy and negotiation.",
     "choices": {
       "Continue": "Merchant_Route_2"
+    }
+  },
+
+  "Sage_Route_2": {
+    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
+    "choices": {
+      "Continue": "Sage_Route_3"
+    }
+  },
+  "Merchant_Route_2": {
+    "text": "It's a bright day and you make your way through a foreign town. you pull your wooden cart, filled with sugar, metals and fur, with you. The guild ordered you to sell everything for 20 golden coins which is double the current value. as you pass the people, you reach a crowd of merchants and commoners shouting and yelling. As you mingle in the crowd, people are walking up to you. As you sell your goods, you make your way back to the guild headquarters. Suddenly, a woman runs up to you. You observe her panicking through her facial expressions and her voice. She starts speaking in a foreign language, her words unable to penetrate through your unknowingness. What do you do?",
+    "choices": {
+      "Ignore her": "Merchant_Route_3_Ignore",
+      "Help her": "Merchant_Route_3_Help"
+    }
+  },
+
+  "Sage_Route_2": {
+    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
+    "choices": {
+      "Continue": "Sage_Route_3"
+    }
+  },
+  "Merchant_Route_3_Help": {
+    "text": "You decide to calm her down so that she gets back to her senses. You ask her what's wrong. She points at your pouch. There's a luminescent potion inside. It's your most valuable asset. The potion grands you great health upon drinking it. Looking back at the woman, she starts to explain in gestures. You start to understand that a person dear to her is unwell and in need of treatment. Since she's desperate for the potion, it must be certain that there's nothing else able to help this poor woman. What will you do?",
+    "choices": {
+      "Ignore her": "Merchant_Route_3_Ignore",
+      "Help her": "Merchant_Route_3_Help"
+    }
+  },
+  "Merchant_Route_3_Ignore": {
+    "text": "You push the woman away out of frustration. She lands hurtfully on the ground and starts breaking up in tears. You ignore her standards as you continue your journey to the guild headquarters.",
+    "choices": {
+      "Ignore her": "Merchant_Route_3_Ignore",
+      "Help her": "Merchant_Route_3_Help"
     }
   }
 }

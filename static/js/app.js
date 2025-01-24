@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // start
 startButton.addEventListener("click", () => {
-  console.log("start button clicked");
   loadScene("start");
   startButton.style.display = "none"; // hide
   gameContainer.style.display = "block"; // show

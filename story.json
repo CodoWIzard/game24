@@ -1,6 +1,6 @@
 {
   "start": {
-    "text": "You are an individual from Europe. It's 1262 AC. build your character.",
+    "text": "You are an individual from Europe. It's 1262 AC. Build your character.",
     "choices": {
       "Continue": "Customization"
     }
@@ -13,50 +13,171 @@
     }
   },
   "Sage_Route": {
-    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
+    "text": [
+      "You're an individual who started to follow the sage path.",
+      "You're nowhere near being an excellent one, but the journey is what counts. You traveled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings, and the journals made by others before you. Your abilities are: Wisdom, intuition, virtue, and intelligence."
+    ],
     "choices": {
       "Continue": "Sage_Route_2"
     }
   },
+  "Sage_Route_2": {
+    "text": [
+      "You continue your journey as a sage, delving deeper into your studies.",
+      "Your reputation grows among travelers and scholars alike. People seek your wisdom and guidance. You encounter challenges that test your resolve and knowledge.",
+      "One day, you discover an ancient manuscript hidden in a cave, detailing forgotten rituals of enlightenment. What will you do?"
+    ],
+    "choices": {
+      "Study the manuscript": "Sage_Route_3_Study",
+      "Share it with fellow sages": "Sage_Route_3_Share"
+    }
+  },
+  "Sage_Route_3_Study": {
+    "text": [
+      "You immerse yourself in the manuscript's teachings.",
+      "Months pass as you decipher its secrets. Your understanding of the universe deepens, unlocking new realms of possibility.",
+      "However, you begin to experience strange visions, as though the manuscript is altering your perception. You must decide how to proceed."
+    ],
+    "choices": {
+      "Embrace the visions": "Sage_Route_4_Visions",
+      "Destroy the manuscript": "Sage_Route_4_Destroy"
+    }
+  },
+  "Sage_Route_3_Share": {
+    "text": [
+      "You gather a council of esteemed sages to share the manuscript.",
+      "Together, you decipher its secrets and discuss its implications for the world. Your collaboration leads to new insights and a deeper bond among sages.",
+      "As word of your council spreads, other sages from distant lands seek to join, forming a network of wisdom that spans continents."
+    ],
+    "choices": {
+      "Form an academy": "Sage_Route_4_Academy",
+      "Guard the knowledge": "Sage_Route_4_Guard"
+    }
+  },
+  "Sage_Route_4_Visions": {
+    "text": [
+      "You embrace the visions, believing they hold deeper truths.",
+      "As your mind expands, you begin to perceive patterns and connections in the natural world that others cannot fathom.",
+      "Your wisdom grows, but so does your isolation, as others struggle to understand your revelations."
+    ],
+    "choices": {}
+  },
+  "Sage_Route_4_Destroy": {
+    "text": [
+      "Fearing the manuscript's influence, you destroy it to preserve your sanity.",
+      "Though the knowledge is lost, you find peace and clarity in returning to simpler studies.",
+      "You rebuild your life as a sage, focusing on teaching and inspiring others with the wisdom you already possess."
+    ],
+    "choices": {}
+  },
+  "Sage_Route_4_Academy": {
+    "text": [
+      "You establish an academy where sages from across the world can gather to share knowledge.",
+      "The academy becomes a beacon of learning and enlightenment, attracting the finest minds of the age.",
+      "Your legacy as a founder of wisdom endures for centuries."
+    ],
+    "choices": {}
+  },
+  "Sage_Route_4_Guard": {
+    "text": [
+      "You decide to guard the manuscript's knowledge, believing it too dangerous for widespread use.",
+      "The council disperses, but you and a few trusted sages form a secret order dedicated to safeguarding the ancient wisdom.",
+      "Your order operates in secrecy, guiding the world subtly from the shadows."
+    ],
+    "choices": {}
+  },
   "Merchant_Route": {
-    "text": "You start off as a beginner merchant. You work for a local merchant guild. Your job is all about bartering, buying and selling. The guild pays you accordingly. You travel a lot throughout the country and you take your rest at local inns. You own a small collection of goods as you spend your own money on them wisely. You furthermore have a reasonable sword sheath. Your abilities are: Commerce, diplomacy and negotiation.",
+    "text": [
+      "You start off as a beginner merchant, working for a local guild.",
+      "Your days are spent in bustling markets, bartering and trading goods. You learn the art of negotiation and commerce, earning a reputation for fairness and shrewdness.",
+      "Your travels take you far and wide across the country. Each journey presents new opportunities and challenges."
+    ],
     "choices": {
       "Continue": "Merchant_Route_2"
     }
   },
-
-  "Sage_Route_2": {
-    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
-    "choices": {
-      "Continue": "Sage_Route_3"
-    }
-  },
   "Merchant_Route_2": {
-    "text": "It's a bright day and you make your way through a foreign town. you pull your wooden cart, filled with sugar, metals and fur, with you. The guild ordered you to sell everything for 20 golden coins which is double the current value. as you pass the people, you reach a crowd of merchants and commoners shouting and yelling. As you mingle in the crowd, people are walking up to you. As you sell your goods, you make your way back to the guild headquarters. Suddenly, a woman runs up to you. You observe her panicking through her facial expressions and her voice. She starts speaking in a foreign language, her words unable to penetrate through your unknowingness. What do you do?",
+    "text": [
+      "One day, you receive a lucrative offer from a wealthy noble to transport rare artifacts across dangerous lands.",
+      "The journey is perilous, but the reward is substantial. As you embark on this adventure, you encounter bandits and natural obstacles that test your skills."
+    ],
     "choices": {
-      "Ignore her": "Merchant_Route_3_Ignore",
-      "Help her": "Merchant_Route_3_Help"
+      "Negotiate with bandits": "Merchant_Route_3_Negotiate",
+      "Fight off attackers": "Merchant_Route_3_Fight",
+      "Seek alternative routes": "Merchant_Route_3_Alternative"
     }
   },
-
-  "Sage_Route_2": {
-    "text": "You're an individual who started to follow the sage path. You're nowhere near being an excellent one, but the journey is what counts. You travelled to a location far away from everything. You summit a faraway mountain and you built your hut. You own a collection of books and scrolls. Your main activity is writing and studying. You study the stars, your surroundings and the journals made by others far before you. Your abilities are: Wisdom, intuition, virtue and intelligence.",
+  "Merchant_Route_3_Negotiate": {
+    "text": [
+      "You use your diplomatic skills to negotiate with the bandits.",
+      "Through careful dialogue and strategic promises, you convince them to let you pass unharmed. Your reputation as a skilled negotiator grows.",
+      "The noble is impressed by your resourcefulness and offers you a permanent role in their trade network."
+    ],
     "choices": {
-      "Continue": "Sage_Route_3"
+      "Accept the offer": "Merchant_Route_4_Noble",
+      "Decline and remain independent": "Merchant_Route_4_Independent"
     }
   },
-  "Merchant_Route_3_Help": {
-    "text": "You decide to calm her down so that she gets back to her senses. You ask her what's wrong. She points at your pouch. There's a luminescent potion inside. It's your most valuable asset. The potion grands you great health upon drinking it. Looking back at the woman, she starts to explain in gestures. You start to understand that a person dear to her is unwell and in need of treatment. Since she's desperate for the potion, it must be certain that there's nothing else able to help this poor woman. What will you do?",
+  "Merchant_Route_3_Fight": {
+    "text": [
+      "You draw your sword and prepare to defend the artifacts.",
+      "A fierce battle ensues, testing your combat prowess. With skill and determination, you defeat the attackers and secure the artifacts.",
+      "The noble rewards you generously for your bravery, cementing your status as a trusted merchant in the realm."
+    ],
     "choices": {
-      "Ignore her": "Merchant_Route_3_Ignore",
-      "Help her": "Merchant_Route_3_Help"
+      "Continue trading independently": "Merchant_Route_4_Independent",
+      "Invest in protection for future journeys": "Merchant_Route_4_Invest"
     }
   },
-  "Merchant_Route_3_Ignore": {
-    "text": "You push the woman away out of frustration. She lands hurtfully on the ground and starts breaking up in tears. You ignore her standards as you continue your journey to the guild headquarters.",
+  "Merchant_Route_3_Alternative": {
+    "text": [
+      "You seek alternative routes, avoiding direct confrontation with bandits.",
+      "The journey is longer and more arduous, but you eventually deliver the artifacts safely.",
+      "The noble respects your cautious approach and offers additional rewards for your ingenuity."
+    ],
     "choices": {
-      "Ignore her": "Merchant_Route_3_Ignore",
-      "Help her": "Merchant_Route_3_Help"
+      "Use the rewards to expand your business": "Merchant_Route_4_Expand",
+      "Save the rewards for future endeavors": "Merchant_Route_4_Save"
     }
+  },
+  "Merchant_Route_4_Noble": {
+    "text": [
+      "You accept the noble's offer and join their trade network.",
+      "Your position grants you access to exclusive goods and powerful connections, but limits your independence.",
+      "Over time, you rise to prominence within the noble's court, managing vast trade routes."
+    ],
+    "choices": {}
+  },
+  "Merchant_Route_4_Independent": {
+    "text": [
+      "You decline the noble's offer, choosing to remain an independent merchant.",
+      "Your freedom allows you to pursue diverse opportunities, but the road ahead is fraught with challenges.",
+      "Through persistence and cunning, you build a vast trading empire of your own."
+    ],
+    "choices": {}
+  },
+  "Merchant_Route_4_Invest": {
+    "text": [
+      "You invest in hiring guards and securing better equipment for your journeys.",
+      "Your trade routes become safer, allowing you to expand your business and take on more valuable cargo.",
+      "Over time, you become known as one of the most reliable merchants in the realm."
+    ],
+    "choices": {}
+  },
+  "Merchant_Route_4_Expand": {
+    "text": [
+      "Using the noble's rewards, you expand your business to new regions.",
+      "You establish trade posts in major cities, creating a network that spans the land.",
+      "Your influence grows, and your name becomes synonymous with commerce and prosperity."
+    ],
+    "choices": {}
+  },
+  "Merchant_Route_4_Save": {
+    "text": [
+      "You save the noble's rewards, using them to fund future endeavors.",
+      "Your careful planning allows you to weather difficult times and seize unexpected opportunities.",
+      "In the long run, your prudence ensures the stability and growth of your business."
+    ],
+    "choices": {}
   }
 }
